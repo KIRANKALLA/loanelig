@@ -4,7 +4,7 @@ import pickle
 pickle_in=open('LoanElig.pkl','rb')
 clf=pickle.load(pickle_in)
 
-st.markdown(unsafe_allow_html=True)
+#st.markdown(unsafe_allow_html=True)
 st.title('LOAN ELIGIBILITY')
 
 a=st.select_input('Enter Gender',('Male','Female'))
