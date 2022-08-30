@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 
 pickle_in=open('LoanElig.pkl','rb')
-clf=pickle_in.load(pickle_in)
+clf=pickle.load(pickle_in)
 
 st.markdown(unsafe_allow_html=True)
 st.title('LOAN ELIGIBILITY')
