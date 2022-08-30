@@ -21,7 +21,7 @@ if b=='Married':
 else:
     b=0
     
-if st.buton('PREDICT'):
+if st.button('PREDICT'):
     e=clf.predict([[a,b,c,d]]).squeeze()
 if e==0:
     st.success('Not Approved')
