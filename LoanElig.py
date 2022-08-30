@@ -23,8 +23,8 @@ else:
     
 if st.button('PREDICT'):
     e=clf.predict([[a,b,c,d]]).squeeze()
-if e==0:
-    st.success('Not Approved')
-else:
-    st.success('Approved')
+    if e==0:
+        st.success('Not Approved')
+    else:
+        st.success('Approved')
 
