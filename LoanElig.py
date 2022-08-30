@@ -7,8 +7,8 @@ clf=pickle.load(pickle_in)
 #st.markdown(unsafe_allow_html=True)
 st.title('LOAN ELIGIBILITY')
 
-a=st.select_input('Enter Gender',('Male','Female'))
-b=st.select_input('Martial Status',('Married','Unmarried'))
+a=st.selectbox('Enter Gender',('Male','Female'))
+b=st.selectbox('Martial Status',('Married','Unmarried'))
 c=st.number_input('Enter applicant income')
 d=st.number_input('Enter Loan amount')
 e=''
